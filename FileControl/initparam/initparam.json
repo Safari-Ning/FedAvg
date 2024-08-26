@@ -1,0 +1,14 @@
+{
+    "gpu": 0,
+    "num_of_clients": 100,
+    "cfraction": 0.1,
+    "epoch": 5,
+    "batchsize": 10,
+    "modelname": "mnist_2nn",
+    "learning_rate": 0.01,
+    "val_freq": 5,
+    "save_freq": 20,
+    "num_comm": 10,
+    "save_path": "./checkpoints",
+    "iid": 0
+}

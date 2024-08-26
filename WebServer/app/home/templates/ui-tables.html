@@ -1,0 +1,57 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Task {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title ">上传任务</h4>
+        <p class="card-category"> 上传联邦学习所需的初始化参数 </p>
+      </div>
+      <div class="card-body">
+        <form action="/initserver/" method="POST">
+          <input type="number" name="gpu" placeholder="gpu" class="form-control-sm"><br>
+          <input type="number" name="num_of_clients" placeholder="num_of_clients" class="form-control-sm"><br>
+          <input type="number" step="0.01"  name="cfraction" placeholder="cfraction" class="form-control-sm"><br>
+          <input type="number" name="epoch" placeholder="epoch" class="form-control-sm"><br>
+          <input type="number" name="batchsize" placeholder="batchsize" class="form-control-sm"><br>
+          <input type="text" name="modelname" placeholder="modelname" class="form-control-sm"><br>
+          <input type="number" step="0.001"  name="learning_rate" placeholder="learning_rate" class="form-control-sm"><br>
+          <input type="number" name="val_freq" placeholder="val_freq" class="form-control-sm"><br>
+          <input type="number" name="save_freq" placeholder="save_freq" class="form-control-sm"><br>
+          <input type="number" name="num_comm" placeholder="num_comm" class="form-control-sm"><br>
+          <input type="text" name="save_path" placeholder="save_path" class="form-control-sm"><br>
+          <input type="number" name="iid" placeholder="iid" class="form-control-sm"><br>
+          <input type="submit" value="提交" class="form-control-sm">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="card card-plain">
+      <div class="card-header card-header-primary">
+        <h4 class="card-title mt-0"> Table on Plain Background</h4>
+        <p class="card-category"> Here is a subtitle for this table</p>
+      </div>
+      <div class="card-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+
+
+
+{% endblock javascripts %}

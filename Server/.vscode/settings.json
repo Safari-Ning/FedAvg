@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "G:\\Anaconda\\envs\\SCSX\\python.exe",
+    "python.linting.enabled": true,
+    "python.languageServer": "Jedi",
+    "fileheader.customMade": {
+        "Author": "Safari Ning",
+        "Date": "Do not edit",
+        "LastEditors": "Safari Ning",
+        "LastEditTime": "Do not edit",
+        "Description": "description"
+    },
+    "fileheader.cursorMode": {
+        "description": "\r\n",
+        "param:": "\r\n",
+        "return:": "",
+    }
+}

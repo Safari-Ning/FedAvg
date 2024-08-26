@@ -1,0 +1,59 @@
+    <div class="sidebar" data-color="purple" data-background-color="white"
+      data-image="/static/assets/img/sidebar-1.jpg">
+      <div class="logo">
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://www.creative-tim.com/product/material-dashboard-flask" class="simple-text logo-normal">
+          FedAvg Dashboard
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+
+        <ul class="nav">
+
+          {% if current_user.is_authenticated %}
+          <li class="nav-item {% if 'index' in segment %} active {% endif %}">
+            <a class="nav-link" href="/">
+              <i class="material-icons">dashboard</i>
+              <p>仪表盘</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'page-user' in segment %} active {% endif %}">
+            <a class="nav-link" href="/page-user.html">
+              <i class="material-icons">person</i>
+              <p>用户账户</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-tables' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-tables.html">
+              <i class="material-icons">content_paste</i>
+              <p>训练任务</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-typography' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-typography.html">
+              <i class="material-icons">library_books</i>
+              <p>开发中...</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'ui-notifications' in segment %} active {% endif %}">
+            <a class="nav-link" href="/ui-notifications.html">
+              <i class="material-icons">notifications</i>
+              <p>导航</p>
+            </a>
+          </li>
+
+
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ url_for('base_blueprint.logout') }}">
+              <i class="material-icons">directions_run</i>
+              <p>登出</p>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+
+
+      </div>
+
+    </div>
